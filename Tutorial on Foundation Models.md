@@ -1,5 +1,7 @@
 ---
-All citations for this article can be fetched here https://www.youtube.com/watch?v=YzyBSDn3OQU
+title: Foudation model
+author: Bob
+source: All citations for this article can be fetched here https://www.youtube.com/watch?v=YzyBSDn3OQU
 ---
 
 # Foundation models definition
