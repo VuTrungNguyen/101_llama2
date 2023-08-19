@@ -1,10 +1,40 @@
+---
+All citations for this article can be fetched here https://www.youtube.com/watch?v=YzyBSDn3OQU
+---
+
 # Foundation models definition
 > Models trained on broad data (generally using self-supervision at scale) that can be adapted to a wide range of downstream tasks[^1]
 # Training
 Using:
 1. Self-supervises learning
 2. Scale
-
+# Unifying tasks
+- Question answering
+- Sentiment classification
+- Translation
+- Coreference resolution
+- Parsing
+# Potential Harms
+- Generate offensive content
+- Generate untruthful content
+- Enable disinformation/malicious
+# Use of foundation models
+- Linear probing
+  > :notebook:
+  > Simple and efficient, model must be very good
+- (Full)Fine-tuning
+  > :notebook:
+  > Best method when we have lots of data, lots of memory
+- Prefix-Tuning/Prompt-Tuning (consume less memory than Fine-tuning)
+  > :notebook:
+  > Good for mid-sized datasets, memory-efficient
+- Zero-shot Prompting
+  > :notebook:
+  > Open ended task (no dataset collection), need to engineer prompts, accuracy can be low
+- In-context Learning
+  > :notebook:
+  > Open ended task (minimal dataset collection), accuracy can be lower than tuning methods
+- Chain-of-Thought
 # Foundation models
 1. BERT
 2. RoBERTa
@@ -18,7 +48,6 @@ Using:
 | OpenAI | GPT-3, Codex, DALL-E, CLIP |
 | Meta | OPT |
 | AI21labs | Jurassic |
-| Huggingface | |
 | HuggingFace + BigSciece | BLOOM |
 | Nvidia + Microsoft | MT-NLG |
 | Stability.ai | Stable diffusion |
