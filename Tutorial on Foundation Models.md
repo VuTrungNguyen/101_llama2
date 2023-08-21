@@ -84,6 +84,8 @@ autotrain llm --train --project_name 'llama2-openassistant'
 | ---| --- |
 | auto-train | huggingface/autotrain-advanced library |
 
+3. Training model 3
+   [tut](https://www.youtube.com/watch?v=Q9zv369Ggfk)
 # Large Language Model Technology stack
 ```mermaid
 graph TD
