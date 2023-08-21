@@ -37,6 +37,20 @@ Using:
   > :notebook:
   > Open ended task (minimal dataset collection), accuracy can be lower than tuning methods
 - Chain-of-Thought
+
+# Transformers
+# Large Language Model Technology stack
+```mermaid
+graph TD
+BM(Basemodel: Generative models)
+CMD(Command: Supervised trained models)
+DLG(Dialogue: Conversational AI)
+SR(Search & Retrieval: Retrieval-augmented)
+CMD --> DLG
+DLG --> SR
+BM --> CMD
+```
+
 # Foundation models
 1. BERT
 2. RoBERTa
