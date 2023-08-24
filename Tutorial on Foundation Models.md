@@ -6,21 +6,26 @@ source: All citations for this article can be fetched here https://www.youtube.c
 
 # Foundation models definition
 > Models trained on broad data (generally using self-supervision at scale) that can be adapted to a wide range of downstream tasks[^1]
-# Training
+# Fine-tine a pretrained model
 Using:
-1. Self-supervises learning
-2. Scale
+1. Transformer Trainer
+3. TensorFlow and Keras
+4. native PyTorch
+
 # Unifying tasks
-- Question answering
-- Sentiment classification
-- Translation
-- Coreference resolution
-- Parsing
+1. Question answering
+2. Sentiment classification
+3. Translation
+4. Coreference resolution
+5. Parsing
+   
 # Potential Harms
 - Generate offensive content
 - Generate untruthful content
 - Enable disinformation/malicious
+  
 # Use of foundation models
+If used directly without further fine-tuning, foudation models can perfom:
 - Linear probing
   > :notebook:
   > Simple and efficient, model must be very good
@@ -33,6 +38,7 @@ Using:
 - Zero-shot Prompting
   > :notebook:
   > Open ended task (no dataset collection), need to engineer prompts, accuracy can be low
+- Few-shot Prompting
 - In-context Learning
   > :notebook:
   > Open ended task (minimal dataset collection), accuracy can be lower than tuning methods
@@ -43,6 +49,7 @@ Why? fine-tuning can decreasing cost of use
    Behave in certain way  
 2. Knowledge base Embedding
    Gain domain knowledge
+
 # Transformers
 1. Training model 1
   GPT-LLM-Trainer, through Google Colab
@@ -99,16 +106,19 @@ BM --> CMD
 ```
 
 # Foundation models
-1. BERT
-2. RoBERTa
-3. GPT-2
-4. T5
-5. Turing NLG
-6. GPT-3
+Foudation models sometimes are referred as "Self-Supervised models", "Pre-trained models"[^1]
+Types of models
+- Text Models
+- Vision models
+- Audio models
+- Multimodal models
 
 | Organization | Models |
 |---|---|
 | OpenAI | GPT-3, Codex, DALL-E, CLIP |
+| Microsoft | Turing NLG |
+| Open-source | T5, RoBERTa |
+| Google | LamDa, BERT, PaLM, MUM |
 | Meta | OPT |
 | AI21labs | Jurassic |
 | HuggingFace + BigSciece | BLOOM |
@@ -116,8 +126,8 @@ BM --> CMD
 | Stability.ai | Stable diffusion |
 | BAAI | Wu Dao 2.0 |
 | EleutherAI | GPT-NeoX |
-| DeepMind | Gopher, Chinchilla |
+| Google DeepMind | Gopher, Chinchilla |
 | Huawei | PanGu-Alpha |
 | Naver | HyperCL, OVA |
-| Google | PaLM, MUM |
+
 [^1]: ["Introducing the Center for Research on Foundation Models (CRFM)"](https://hai.stanford.edu/news/introducing-center-research-foundation-models-crfm) Stanford HAI. Retrieved 11 June 2022.
