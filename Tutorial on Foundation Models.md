@@ -6,13 +6,44 @@ source: All citations for this article can be fetched here https://www.youtube.c
 
 # Foundation models definition
 > Models trained on broad data (generally using self-supervision at scale) that can be adapted to a wide range of downstream tasks[^1]
-# Fine-tine a pretrained model
+# Foundation models
+Foudation models sometimes are referred as "Self-Supervised models", "Pre-trained models"[^1]
+Types of models
+- Text Models
+- Vision models
+- Audio models
+- Multimodal models
+
+| Organization | Models |
+|---|---|
+| OpenAI | GPT-3, Codex, DALL-E, CLIP |
+| Microsoft | Turing NLG |
+| Open-source | T5, RoBERTa |
+| Google | LamDa, BERT, PaLM, MUM |
+| Meta | OPT |
+| AI21labs | Jurassic |
+| HuggingFace + BigSciece | BLOOM |
+| Nvidia + Microsoft | MT-NLG |
+| Stability.ai | Stable diffusion |
+| BAAI | Wu Dao 2.0 |
+| EleutherAI | GPT-NeoX |
+| Google DeepMind | Gopher, Chinchilla |
+| Huawei | PanGu-Alpha |
+| Naver | HyperCL, OVA |
+# Fine-tune a pretrained model
 Using:
 1. Transformer Trainer
 3. TensorFlow and Keras
 4. native PyTorch
+   
+# Fine-tuning methods
+Why? fine-tuning can decreasing cost of use
+1. Finetune LLM
+   - to make a model behave in certain way  
+2. Knowledge base Embedding
+   - to make a model gain domain knowledge
 
-# Unifying tasks
+# Foundation models capabilities
 1. Question answering
 2. Sentiment classification
 3. Translation
@@ -43,12 +74,7 @@ If used directly without further fine-tuning, foudation models can perfom:
   > :notebook:
   > Open ended task (minimal dataset collection), accuracy can be lower than tuning methods
 - Chain-of-Thought
-# Fine-tuning methods
-Why? fine-tuning can decreasing cost of use
-1. Finetune LLM
-   Behave in certain way  
-2. Knowledge base Embedding
-   Gain domain knowledge
+
 
 # Transformers
 1. Training model 1
@@ -57,7 +83,6 @@ Why? fine-tuning can decreasing cost of use
 - System Message Generation: gpt-llm-trainer will generate an effective system prompt for your model
 - Fine-tuning: After your dataset has been generated, the system will automatically split it into training and validation sets, fine-tune a model for you, and get it ready for inference
   > [tut](https://www.youtube.com/watch?v=pRq2Fx4kYQI)
-
 
 | Terms | Definition |
 | ---| --- |
@@ -93,41 +118,6 @@ autotrain llm --train --project_name 'llama2-openassistant'
 
 3. Training model 3
    [tut](https://www.youtube.com/watch?v=Q9zv369Ggfk)
-# Large Language Model Technology stack
-```mermaid
-graph TD
-BM(Basemodel: Generative models)
-CMD(Command: Supervised trained models)
-DLG(Dialogue: Conversational AI)
-SR(Search & Retrieval: Retrieval-augmented)
-CMD --> DLG
-DLG --> SR
-BM --> CMD
-```
 
-# Foundation models
-Foudation models sometimes are referred as "Self-Supervised models", "Pre-trained models"[^1]
-Types of models
-- Text Models
-- Vision models
-- Audio models
-- Multimodal models
-
-| Organization | Models |
-|---|---|
-| OpenAI | GPT-3, Codex, DALL-E, CLIP |
-| Microsoft | Turing NLG |
-| Open-source | T5, RoBERTa |
-| Google | LamDa, BERT, PaLM, MUM |
-| Meta | OPT |
-| AI21labs | Jurassic |
-| HuggingFace + BigSciece | BLOOM |
-| Nvidia + Microsoft | MT-NLG |
-| Stability.ai | Stable diffusion |
-| BAAI | Wu Dao 2.0 |
-| EleutherAI | GPT-NeoX |
-| Google DeepMind | Gopher, Chinchilla |
-| Huawei | PanGu-Alpha |
-| Naver | HyperCL, OVA |
 
 [^1]: ["Introducing the Center for Research on Foundation Models (CRFM)"](https://hai.stanford.edu/news/introducing-center-research-foundation-models-crfm) Stanford HAI. Retrieved 11 June 2022.
