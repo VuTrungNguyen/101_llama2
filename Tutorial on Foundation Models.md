@@ -30,6 +30,15 @@ Types of models
 | Google DeepMind | Gopher, Chinchilla |
 | Huawei | PanGu-Alpha |
 | Naver | HyperCL, OVA |
+# LLM metrics
+| Metric | Definition |
+| Model size and Parameters | Larger models perfom better, require more computing power |
+| Training data size | More comprehensive and diverse training data leads to better language understanding |
+| Training time | Faster training are better |
+| Inference Speed | Faster inference means faster responses generation |
+| Contextual understanding | How well the models understand context and provide coherent responses |
+| Generative Diversity | A model that can produce varied outputs while maintaining relevance is valuable |
+| Few-shot and Zero-shot learning | Test how well models can perform with limited examples (few-shot) or no
 # Fine-tune a pretrained model
 Using:
 1. Transformer Trainer
