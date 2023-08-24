@@ -32,6 +32,7 @@ Types of models
 | Naver | HyperCL, OVA |
 # LLM metrics
 | Metric | Definition |
+| --- | --- |
 | Model size and Parameters | Larger models perfom better, require more computing power |
 | Training data size | More comprehensive and diverse training data leads to better language understanding |
 | Training time | Faster training are better |
