@@ -29,7 +29,7 @@ Types of models
 | EleutherAI | GPT-NeoX |
 | Google DeepMind | Gopher, Chinchilla |
 | Huawei | PanGu-Alpha |
-| Naver | HyperCL, OVA |
+| Naver | HyperCLOVA |
 # LLM metrics
 | Metric | Definition |
 | --- | --- |
