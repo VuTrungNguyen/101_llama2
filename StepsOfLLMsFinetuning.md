@@ -116,5 +116,9 @@ training_args = TrainingArguments(
 
 ## Error Analysis
 - Understand base model behavior before finetuning
-- Categorize errors: eg. Misspelling, Toolong
+- Categorize errors: eg. Misspelling, Toolong, Repetitive
 > Iterate on data to fix these problems in data space
+
+> Key Take aways:
+> - Don't get caught up in benchmarks
+> - Tailored-Finetuning models for business need often require their specific benchmark, instead of general Elo
