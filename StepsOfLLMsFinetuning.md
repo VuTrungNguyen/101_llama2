@@ -1,0 +1,120 @@
+# Data preparation
+## Collect instruction-response pairs
+## Concatenate pairs (opt: add promp template)
+## Tokenize: Pad, Truncate
+```
+import pandas as pd
+import datasets
+from pprint import pprint
+from transformers import AutoTokenizer
+```
+```
+tokenizer = AutoTokenizer.from_pretrained("EleutherAI/pythia-70m")
+text = "Hi, how are you?"
+encoded_text = tokenizer(text)["input_ids"]
+encoded_text
+```
+`>> [12764, 13, 849, 403, 368, 32]`
+```
+decoded_text = tokenizer.decode(encoded_text)
+print("Decoded tokens back into text: ", decoded_text)
+```
+`>> Decoded tokens back into text:  Hi, how are you?`
+
+- Padding: make len of chunks of texts equal
+```
+tokenizer.pad_token = tokenizer.eos_token 
+encoded_texts_longest = tokenizer(list_texts, padding=True)
+print("Using padding: ", encoded_texts_longest["input_ids"])
+```
+`>> Using padding:  [[12764, 13, 849, 403, 368, 32], [42, 1353, 1175, 0, 0, 0], [4374, 0, 0, 0, 0, 0]]`
+- Truncation: cut chunks of text short
+```
+encoded_texts_truncation = tokenizer(list_texts, max_length=3, truncation=True)
+print("Using truncation: ", encoded_texts_truncation["input_ids"])
+```
+`>> Using truncation:  [[12764, 13, 849], [42, 1353, 1175], [4374]]`
+
+- Combining Padding and Truncating:
+```
+encoded_texts_both = tokenizer(list_texts, max_length=3, truncation=True, padding=True)
+print("Using both padding and truncation: ", encoded_texts_both["input_ids"])
+```
+`Using both padding and truncation:  [[403, 368, 32], [42, 1353, 1175], [4374, 0, 0]]`
+
+## Split into train/test
+
+# Training process
+## Process
+- Add training data
+- Calculate loss
+- BackProp through model
+- Update weights
+## Hyperparameters
+- Learning rate
+- Learning rate scheduler
+- Optimizer hyperparameters
+
+### Dictionary
+- Epoch: 1 epoch is 1 time running over the whole dataset
+- Batch: a set of tokenized data
+- FLOPS: Floating Point Operations
+- Memory Footprint: Running this tiny model cost 300MB memory
+- Training arguments:
+```
+training_args = TrainingArguments(
+
+  # Learning rate
+  learning_rate=1.0e-5,
+
+  # Number of training epochs
+  num_train_epochs=1,
+
+  # Max steps to train for (each step is a batch of data)
+  # Overrides num_train_epochs, if not -1
+  max_steps=max_steps,
+
+  # Batch size for training
+  per_device_train_batch_size=1,
+
+  # Directory to save model checkpoints
+  output_dir=output_dir,
+
+  # Other arguments
+  overwrite_output_dir=False, # Overwrite the content of the output directory
+  disable_tqdm=False, # Disable progress bars
+  eval_steps=120, # Number of update steps between two evaluations
+  save_steps=120, # After # steps model is saved
+  warmup_steps=1, # Number of warmup steps for learning rate scheduler
+  per_device_eval_batch_size=1, # Batch size for evaluation
+  evaluation_strategy="steps",
+  logging_strategy="steps",
+  logging_steps=1,
+  optim="adafactor",
+  gradient_accumulation_steps = 4,
+  gradient_checkpointing=False,
+
+  # Parameters for early stopping
+  load_best_model_at_end=True,
+  save_total_limit=1,
+  metric_for_best_model="eval_loss",
+  greater_is_better=False
+)
+```
+
+# Evaluating models
+1. Human Evaluation
+- Human expert evaluation is most reliable
+2. Test suites
+  Good dataset is crucial:
+- High-quality
+- Accurate
+- Generalized
+- **Not seen in training data**
+3. Elo Rankings
+- AB test for models
+
+## Error Analysis
+- Understand base model behavior before finetuning
+- Categorize errors: eg. Misspelling, Toolong
+> Iterate on data to fix these problems in data space
