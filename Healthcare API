@@ -1,0 +1,14 @@
+# Healthcare API and FHIR best practices
+## Type of Healthcare API
+- DICOM: digital Imaging and Communications in Medicine
+- HL7v2: Event Messaging service
+- FHIR: Fast Healthcare Interoperability Resouces
+## EMR - Electronic Medical Records
+- Purpose:
+  - Communication, Billing, Legal doc
+  - EM codes: eg. 99201-5 new, 99211-5 Est => History (Hx), Physical Exam (PE), Medical Decision Making (MDM), SOAP note (Subjective Objective, Assessment and Plan)
+  - Rules: Chielf Complaint (CC), Past Medical History (PMHx), SocHx (Social history), FamHx (Family History), Review of System (ROS)
+  - Exam: Focused(2 parts/Organs), Detailed( 4parts/Organs), Comprehensive(8 parts/Organs)
+- Problems:
+  - Redundency, accuracy: 9/26/22 a JAMA study found out that 50% of the EMR records were created copy-paste, rasing concerns about credibility of EMRs
+  - Info overload: est: 85pages/patient, with 50% of those pages are redundent info.
