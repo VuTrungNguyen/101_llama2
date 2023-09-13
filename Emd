@@ -1,3 +1,6 @@
+Evaluating LLMs
+
+# The GLUE Benchmark
 The GLUE Benchmark is a group of nine classification tasks on sentences or pairs of sentences which are:
 
 - [CoLA](https://nyu-mll.github.io/CoLA/) (Corpus of Linguistic Acceptability) Determine if a sentence is grammatically correct or not.is a  dataset containing sentences labeled grammatically correct or not.
@@ -9,3 +12,19 @@ The GLUE Benchmark is a group of nine classification tasks on sentences or pairs
 - [SST-2](https://nlp.stanford.edu/sentiment/index.html) (Stanford Sentiment Treebank) Determine if the sentence has a positive or negative sentiment.
 - [STS-B](http://ixa2.si.ehu.es/stswiki/index.php/STSbenchmark) (Semantic Textual Similarity Benchmark) Determine the similarity of two sentences with a score from 1 to 5.
 - [WNLI](https://cs.nyu.edu/faculty/davise/papers/WinogradSchemas/WS.html) (Winograd Natural Language Inference) Determine if a sentence with an anonymous pronoun and a sentence with this pronoun replaced are entailed or not. (This dataset is built from the Winograd Schema Challenge dataset.)
+
+# LLMs trained on CODE - CODEX
+# Deep learning with Code Data
+- APPS
+- CodeBERT
+- CodeXGLUE
+- Break-It-Fix-It 
+# Evaluation through unit tests
+1. [HumanEval](github.com/openai/human-eval)
+164 Programming Problems:
+- Function Signature
+- Docstring
+- Body
+2. Pass@K Metric
+- K code samples are generated per problem, solved if any sample passes the unit tests
+- Similar metrics for information retrieval/search
