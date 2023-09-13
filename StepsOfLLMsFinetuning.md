@@ -75,6 +75,8 @@ print("Using both padding and truncation: ", encoded_texts_both["input_ids"])
 - FLOPS: Floating Point Operations
 - Memory Footprint: Running this tiny model cost 300MB memory
 - Training arguments:
+- 1-shot: a model evaluation test, which involves a pre-trained model without any fine-tuning for demonstration
+- BLUE score: matching metric, how well the result of text generation of a model, compared to ground truh (from HumanEval tasks)
 ```
 training_args = TrainingArguments(
 
