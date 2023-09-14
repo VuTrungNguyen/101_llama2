@@ -28,3 +28,11 @@ The GLUE Benchmark is a group of nine classification tasks on sentences or pairs
 2. Pass@K Metric
 - K code samples are generated per problem, solved if any sample passes the unit tests
 - Similar metrics for information retrieval/search
+
+# Some papers about evaluating LLMs
+[Hendrycks, Measuring Massive Multitask Language Understanding](https://arxiv.org/abs/2009.03300)
+- Take away:
+[Efrat,  LMentry: A language model benchmark of elementary language tasks](https://arxiv.org/abs/2211.02069)
+- Take away:
+  - Benchmarks are getting larger and more complex as the LLMs performance improves
+  - Instruction-Finetuning give more boost of perfomance than scaling up the models (similar claim was made by Chinchilla team)
