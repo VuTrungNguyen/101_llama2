@@ -31,6 +31,15 @@
 - 98 results returned by the filter
 - format: Jupiter notebook, spreadsheet
 - size: few Mbs to few Gbs
+## [Multiple results for "EHR" and "Electronic Health Record" search keywords]([Paperswithcode.com](https://paperswithcode.com/datasets?q=Electronic+Health+Record&v=lst&o=match))
+> Open paper, code and dataset for public access
+- 6 results for dataset search of "EHR" keyword and 794 results for "Electronic Health Record"
+- format: code repository, more action needed to retrieve datasets
+## [N2C2 NLP research dataset from Havard](https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/)
+> Unstructured notes from the Research Patient Data Registry at Partners Healthcare (originally developed during the i2b2 project)
+- Access upon request
+- These data sets now remain under the stewardship of the Department of Biomedical Informatics at Harvard Medical School
+- 
 # Health Statistic and insight (report, graph)
 [digitalhealth.gov](https://www.digitalhealth.gov.au/initiatives-and-programs/my-health-record/statistics)
 - Data from their site is restricted. No public access
