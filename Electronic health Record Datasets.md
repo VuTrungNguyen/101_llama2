@@ -39,7 +39,7 @@
 > Unstructured notes from the Research Patient Data Registry at Partners Healthcare (originally developed during the i2b2 project)
 - Access upon request
 - These data sets now remain under the stewardship of the Department of Biomedical Informatics at Harvard Medical School
-- 
+
 # Health Statistic and insight (report, graph)
 [digitalhealth.gov](https://www.digitalhealth.gov.au/initiatives-and-programs/my-health-record/statistics)
 - Data from their site is restricted. No public access
@@ -54,11 +54,18 @@
   - Advocate: Contribute to the development and implementation of activities
   - Engage: Become involved where possible, in the planning, design and delivery of activities.
 # Clinical Case Studies
-Case studies with unknown format (suggested format: Text, Medical Record, CT scans, Genomics data, protein sequence data)
+Case studies with unknown format (suggested format: Text, Medical Record, CT scans, Genomics data, protein sequence data, Clinical Trials, Guidelines and Terminologies)
 - [From National Library of Medicine](https://www.ncbi.nlm.nih.gov/books/NBK500024/)
 - [From Association for Diagnostics & Laboratory medicine](https://www.aacc.org/science-and-research/clinical-chemistry/clinical-case-studies)
 
 # Med-LLM model evaluation
 - [MultimedQA](https://www.nature.com/articles/s41586-023-06291-2) by Google PaLM 2
+- Percentile in PHI - detecting medical note
+
+# Application
+Suggested applications:
+- Medical note summary
+- Openbook QA ( with further prompting for context)
+- Clinical text generation (eg. common symptom of diarhea is...)
 
 [^1]: Australia's National Digital Health Strategy, Framework for action (https://www.digitalhealth.gov.au/sites/default/files/2020-11/Framework_for_Action.pdf)
