@@ -53,5 +53,9 @@
   - Support: Contribute to the co-design of planning activities
   - Advocate: Contribute to the development and implementation of activities
   - Engage: Become involved where possible, in the planning, design and delivery of activities.
+# Clinical Case Studies
+Case studies with unknown format
+- [From National Library of Medicine](https://www.ncbi.nlm.nih.gov/books/NBK500024/)
+- [From Association for Diagnostics & Laboratory medicine](https://www.aacc.org/science-and-research/clinical-chemistry/clinical-case-studies)
 
 [^1]: Australia's National Digital Health Strategy, Framework for action (https://www.digitalhealth.gov.au/sites/default/files/2020-11/Framework_for_Action.pdf)
