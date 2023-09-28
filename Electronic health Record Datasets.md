@@ -54,7 +54,7 @@
   - Advocate: Contribute to the development and implementation of activities
   - Engage: Become involved where possible, in the planning, design and delivery of activities.
 # Clinical Case Studies
-Case studies with unknown format
+Case studies with unknown format (suggested format: Text, Medical Record, CT scans, Genomics data, protein sequence data)
 - [From National Library of Medicine](https://www.ncbi.nlm.nih.gov/books/NBK500024/)
 - [From Association for Diagnostics & Laboratory medicine](https://www.aacc.org/science-and-research/clinical-chemistry/clinical-case-studies)
 
