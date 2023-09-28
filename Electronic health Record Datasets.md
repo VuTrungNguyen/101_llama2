@@ -31,7 +31,7 @@
 - 98 results returned by the filter
 - format: Jupiter notebook, spreadsheet
 - size: few Mbs to few Gbs
-## [Multiple results for "EHR" and "Electronic Health Record" search keywords]([Paperswithcode.com](https://paperswithcode.com/datasets?q=Electronic+Health+Record&v=lst&o=match))
+## [Paperwithcode - Multiple results for "EHR" and "Electronic Health Record" search keywords](https://paperswithcode.com/datasets?q=Electronic+Health+Record&v=lst&o=match)
 > Open paper, code and dataset for public access
 - 6 results for dataset search of "EHR" keyword and 794 results for "Electronic Health Record"
 - format: code repository, more action needed to retrieve datasets
