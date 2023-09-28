@@ -58,4 +58,7 @@ Case studies with unknown format
 - [From National Library of Medicine](https://www.ncbi.nlm.nih.gov/books/NBK500024/)
 - [From Association for Diagnostics & Laboratory medicine](https://www.aacc.org/science-and-research/clinical-chemistry/clinical-case-studies)
 
+# Med-LLM model evaluation
+- [MultimedQA](https://www.nature.com/articles/s41586-023-06291-2) by Google PaLM 2
+
 [^1]: Australia's National Digital Health Strategy, Framework for action (https://www.digitalhealth.gov.au/sites/default/files/2020-11/Framework_for_Action.pdf)
