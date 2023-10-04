@@ -30,6 +30,23 @@ Types of models
 | Google DeepMind | Gopher, Chinchilla |
 | Huawei | PanGu-Alpha |
 | Naver | HyperCL, OVA |
+
+# Common used perfomance evaluation methods
+1. Perplexity
+- Quantify how well the model predicts a sample of text. Lower perplexity means better performance
+2. Human evaluation
+3. BLEU (Bilingual Evaluation Understudy)
+- Range from 0-1, higher score indicates better perfomance
+- Unigram precision = (num word matches)/(num words in generation); which means: U-precision = 1 for this case:
+machine_generated_translation = [six, six, six, six, six]
+human_ref_translation = [I, am, thirty, six, years, old]
+"six" matched 5 times, hence U-precision = 5/5 = 1 (!?)
+-> BLEU uses Modified unigram precision = Clip(num word matches)/(num words in generation) =1/5
+- N-gram precision take N words with order, into evaluation (means, "I am thirty six" differs from "six thiry am I")
+- N-gram = "a chunk of N words"
+4. ROUGE (Recall-oriented Understudy for Gissing Evaluation)
+5. Diversity
+
 # LLM metrics
 | Metric | Definition |
 | --- | --- |
@@ -40,6 +57,7 @@ Types of models
 | Contextual understanding | How well the models understand context and provide coherent responses |
 | Generative Diversity | A model that can produce varied outputs while maintaining relevance is valuable |
 | Few-shot and Zero-shot learning | Test how well models can perform with limited examples (few-shot) or no
+
 # Fine-tune a pretrained model
 Using:
 1. Transformer Trainer
