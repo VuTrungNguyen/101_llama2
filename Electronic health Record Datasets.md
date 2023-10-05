@@ -1,7 +1,9 @@
 # Overview of Clinical Tasks
 Five clinical NLP tasks including:
 1. Clinical concept extraction (or named entity recognition [NER])
+- dataset: 2010 N2C2 [^3], restricted access through [Havard portal](https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/)
 2. Medical relation extraction (MRE)
+- dataset: 2018 N2C2 [^3], restricted access through [Havard portal](https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/)
 3. Semantic textual similarity (STS):
 - Determine the extent to which two sentences are similar in terms of semantic meaning
 - dataset: N2C2 [^3], restricted access through [Havard portal](https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/)
