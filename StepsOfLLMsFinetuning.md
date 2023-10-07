@@ -1,11 +1,7 @@
-# Data preparation
-Plan for first time finetuning:
-1. Identify tasks by prompt-engineering a large LLM
-2. Find tasks that you see an LLM doing ~OK at
-3. Pick one task
-4. Get ~1000 inputs and outputs for the task (better than the ~OK from the LLM)
-5. Finetune a small LLM on this data
-
+<details open>
+<summary><h1>Data preparation</h1></summary>
+<br>
+  
 ## Collect instruction-response pairs
 Instruction-following datasets:
 - FAQs, Customer support conversations, Slack meesages, etc.
@@ -57,6 +53,8 @@ print("Using both padding and truncation: ", encoded_texts_both["input_ids"])
 `Using both padding and truncation:  [[403, 368, 32], [42, 1353, 1175], [4374, 0, 0]]`
 
 ## Split into train/test
+</details>
+
 
 # Training process
 ## Process
@@ -138,3 +136,7 @@ training_args = TrainingArguments(
 > Key Take aways:
 > - Don't get caught up in benchmarks
 > - Tailored-Finetuning models for business need often require their specific benchmark, instead of general Elo
+
+# Fine-tuning with LoRA
+## PEFR
+### LoRA
