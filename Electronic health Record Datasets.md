@@ -65,6 +65,19 @@ Five clinical NLP tasks including:
 - Clinical concepts in 2010 i2b2 and 2012 i2b2 challenges: problems, treatments, lab tests;
 - clinical concepts in 2018 n2c2 challenge: drugs, adverse events, and drug-related attributes (e.g., dose).
 - Medical relation in 2018 n2c2 challenge: drug induced adverse events.
+## [National Center for Biotechnology Information](https://www.ncbi.nlm.nih.gov/research/bionlp/Data/)
+>  U.S. National Library of Medicine NCBI National Center for Biotechnology Information Log in
+- [NCBI disease corpus](https://www.ncbi.nlm.nih.gov/bionlp/Data/disease)
+NCBI disease corpus is a collection of 793 PubMed abstracts fully annotated at both mention and concept levels. 
+- [BioCreative V CDR corpus](http://www.biocreative.org/tasks/biocreative-v/track-3-cdr/)
+BC5CDR corpus consists of 1500 PubMed articles with 4409 annotated chemicals, 5818 diseases and 3116 chemical-disease interactions. 
+- [tmVar corpus](https://www.ncbi.nlm.nih.gov/CBBresearch/Lu/Demo/tmTools/download/tmVar/tmVarCorpus.zip)
+tmVar Corpus contains 500 PubMed articles manually annotated with mutation mentions of various kinds.
+- [CTD-Pfizer dataset](ftp://ftp.ncbi.nlm.nih.gov/pub/lu/Suppl/Peng2016CID/CID.PubTator.txt.zip)
+- [PubMed Phrases](https://ftp.ncbi.nlm.nih.gov/pub/lu/PubMedPhrase/PubMed_Phrases.tar.gz)
+The dataset contains a collection of 705,915 PubMed Phrases (Kim et al., 2018) that are beneficial for information retrieval and human comprehension.
+- [NLM-Chem corpus](https://ftp.ncbi.nlm.nih.gov/pub/lu/NLMChem/)
+The NLM-Chem corpus is a manually annotated full-text resource on chemicals in the biomedical literature. The corpus contains 150 full-text journal articles selected both to be rich in chemical mentions and for articles where human annotation was expected to be most valuable. The corpus was doubly annotated by ten expert NLM indexers, with high inter-annotator agreement, and contains ~5000 unique chemical name annotations mapped to ~2000 MeSH identifiers.
 
 # Health Statistic and insight (report, graph)
 [digitalhealth.gov](https://www.digitalhealth.gov.au/initiatives-and-programs/my-health-record/statistics)
